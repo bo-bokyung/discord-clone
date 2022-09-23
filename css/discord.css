@@ -1,0 +1,43 @@
+:root
+/* color */
+
+.unit-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hide-text {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0px, 0px, 99.9%, 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+}
+
+body {
+    background-color: var(--background-gray);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    min-width: 1000px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.h1 {
+    background: url('../img/top-logo.svg') no-repeat 0 0;
+	width: 124px;
+	height: 24px;
+}
+
+.header-right {
+
+}
+
