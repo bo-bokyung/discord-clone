@@ -1,0 +1,279 @@
+:root {
+    /* background-color */
+    --background-footer : #4f545c;
+    --detail-color : #3ba55c;
+
+    /* font-blue */
+    --font-bule : #5865f2;
+
+    /* font-gray */
+    --font-gray1 : #4f545c;
+    --font-gray2 : #68727e;
+}
+
+/* .unit-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+} */
+
+.hide-text {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0px, 0px, 99.9%, 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    margin: 0 10%;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    /* box-sizing: border-box; */
+}
+
+h1 {
+    background: url('../img/top-logo.svg') no-repeat 0 0;
+	width: 124px;
+	height: 24px;
+    position: relative;
+}
+
+.header-right {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    gap: 32px;
+    color: var(--font-bule);
+}
+
+.feedback {
+    color: var(--font-gray);
+}
+
+.feedback:hover {
+    text-decoration: underline;
+}
+
+.lang {
+    color: var(--font-gray);
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.lang:hover {
+    text-decoration: underline;
+}
+
+/* 삼각형 모양 다시 만들기 */
+.lang::after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-top: 4px solid var(--font-gray);
+}
+
+.question {
+    color: var(--font-gray);
+}
+
+.question:hover {
+    text-decoration: underline;
+}
+
+.login {
+    color: var(--font-gray);
+}
+
+.login:hover {
+    text-decoration: underline;
+}
+
+.more-view {
+
+}
+
+.wrapper {
+
+}
+
+.main-content-intro {
+    margin-bottom: 40px;
+}
+
+.intro-img {
+    background: url(../img/banner.png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+/* 간격조절하기 */
+.search-content {
+    position: relative;
+    transform: translateY(-200%);
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+h5 {
+    font-size: 36px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.search {
+    border-radius: 50px;
+    box-sizing: border-box;
+    color: gray;
+    height: 40px;
+    padding-left: 40px;
+    width: 100%;
+    border: none;
+    margin-top: 20px;
+}
+.search-container {
+    text-align: center;
+}
+
+.help {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.help > h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--font-gray1)
+}
+
+.help > p {
+    font-size: 16px;
+    color: var(--font-gray1);
+    line-height: 1.5;
+}
+
+.help-guide {
+    color: blue;
+}
+
+.help-guide:hover {
+    text-decoration: underline;
+}
+
+.mian-container {
+    
+}
+
+.main-icon-content {
+    text-align: center;
+}
+
+.main-icon-content > h3 {
+    font-size: 20px;
+    color: var(--font-bule);
+}
+.main-icon-content > p {
+    font-size: 14px;
+}
+
+.display-img {
+    
+}
+.main-icons {
+    margin: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+}
+
+.main-icon-box {
+    width: 240px;
+    height: 260px;
+    border:1px solid red;
+    box-sizing: border-box;
+}
+
+.main-icon-box:hover {
+    
+}
+
+hr {
+    width: 50px;
+    color: #999;
+}
+.discord-img {
+    width: 120px; 
+}
+
+.other-help {
+    font-size: 24px;
+    color: var(--font-gray1);
+    text-align: center;
+}
+
+.sub-container {
+    
+}
+
+.sub-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+}
+
+.detail-content {
+    margin-top: 80px;
+    background-color: #333;
+}
+
+.detail-button {
+    width: 250px;
+    height: 40px;
+    margin: 50px 0;
+    padding: 0;
+    border-radius: 20px;
+    background-color: var(--detail-color);
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.apps-icon {
+    position: relative;
+    width: 814px;
+    height: 145px;
+    background-size: 814px 145px;
+    background-image: url(../img/footer-phone.png);
+    background-color: #333;
+}
+
+.apps-icon > a > figure {
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
