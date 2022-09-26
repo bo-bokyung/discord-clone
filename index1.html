@@ -10,32 +10,44 @@
 </head>
 <body>
     <header>
-        <h1>
-            <a href="#" class="unit-link hide-text"><span class="hide-text">discord</span></a>
-        </h1>
-        <div class="header-right">
-            <a href="#" class="feedback">피드백</a>
-            <a href="#" class="lang">한국어</a>
-            <a href="#" class="question">문의 등록</a>
-            <div class="header-login">
+        <div class="header-container">
+            <h1>
+                <a href="#" class="unit-link hide-text"><span class="hide-text">discord</span></a>
+            </h1>
+            <div class="header-right">
+                <div class="pc-view-header">
+                    <a href="#" class="feedback">피드백</a>
+                    <a href="#" class="lang">한국어</a>
+                    <a href="#" class="question">문의 등록</a>
+                    
+                </div>
+                <div class="mobile-view-header">
+                    <div class="more-view">
+                        ☰
+                    </div>
+                </div>
                 <a href="#" class="login">로그인</a>
             </div>
+            
         </div>
-        <!-- <div class="more-view">
-            ☰
-        </div> -->
     </header>
-    <div class="wrapper">
-        <section id="main-content" class="section-main">
-            <div class="main-content-intro">
-                <figure class="intro-img"></figure>
-                <div class="search-content">
-                    <h5>고객 지원 센터</h5>
-                    <input type="text" class="search" placeholder="검색">
-                </div>
+    <section id="main-content" class="section-main">
+        <div class="main-content-intro">
+            <figure class="intro-img"></figure>
+            <div class="search-content">
+                <h5>고객 지원 센터</h5>
+                <input type="text" class="search" placeholder="검색">
+                <!-- 돋보기 네이밍 바꾸기 -->
+                    <figure class="돋보기">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-iconb" aria-hidden="true">
+                            <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"></circle>
+                            <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"></path>
+                        </svg>
+                    </figure>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>>
+    <!-- section이랑 wrapper 언제 사용  -->
     <section class="help">
         <h2>도움이 필요하신가요? 저희가 도와드리겠습니다.</h2>
         <p>계정 설정부터 승인까지 Discord와 관련된 모든 것을 문의하세요.</p>
@@ -254,10 +266,9 @@
         </div>
         <div class="footer-container-right">
             <a href="#">회사</a>
-            <a href="#">직업</a>
-            <span class="job-offer">구인</span>
+            <a href="#">직업<span class="job-offer">구인</span></a>
             <a href="#">블로그</a>
-            <a href="#">조건 & 개인 정보 보호</a>
+            <a href="#">조건 &amp; 개인 정보 보호</a>
         </div>
     </div>
 </body>
