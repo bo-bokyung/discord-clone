@@ -54,7 +54,7 @@ h1 {
     display: flex;
     font-size: 14px;
     text-align: center;
-    gap: 32px;
+    gap: 35px;
     color: var(--font-bule);
 }
 
@@ -87,7 +87,7 @@ h1 {
     text-decoration: underline;
 }
 
-/* 삼각형 모양 다시 만들기 */
+/* 삼각형 아니고 >모양 방향 돌린 거, translateY는 정마름모 중 반의 반만큼 올라가면 중앙 */
 .lang::after {
     display: block;
     content: '';
@@ -130,6 +130,7 @@ h1 {
     position: relative;
     transform: translateY(-200%);
     max-width: 600px;
+    min-width: 400px;
     margin: 0 auto;
 
 }
@@ -139,19 +140,20 @@ h5 {
     color: white;
     font-weight: 600;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .search {
     border-radius: 50px;
     box-sizing: border-box;
-    color: gray;
+    color: #666;
     height: 40px;
     padding-left: 40px;
     width: 100%;
     border: none;
-    margin-top: 20px;
     outline: none;
 }
+
 .search-container {
     text-align: center;
 }
@@ -207,7 +209,6 @@ h5 {
 }
 
 .main-icons {
-    margin: 100px;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
