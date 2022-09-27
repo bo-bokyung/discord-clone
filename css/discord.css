@@ -116,23 +116,17 @@ h1 {
 }
 
 .main-content-intro {
-    margin-bottom: 40px;
-}
-
-.intro-img {
     background: url(../img/banner.png);
-    background-position: center;
+    height: 350px;
     background-size: cover;
-    height: 300px;
+    background-position: center;
 }
 
-.search-content {
+.search-icon {
     position: relative;
-    transform: translateY(-200%);
     max-width: 600px;
     min-width: 400px;
     margin: 0 auto;
-
 }
 
 h5 {
@@ -143,24 +137,27 @@ h5 {
     padding-bottom: 30px;
 }
 
+
 .search {
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: center; */
     border-radius: 50px;
     box-sizing: border-box;
-    color: #666;
     height: 40px;
     padding-left: 40px;
-    width: 100%;
-    border: none;
+    width: 50%;
+    border: 1px solid #888;
     outline: none;
 }
 
 .search-container {
-    text-align: center;
+    align-items: center;
 }
 
 .help {
     text-align: center;
-    margin-bottom: 48px;
+    padding-top: 48px;
 }
 
 .help > h2 {
@@ -189,6 +186,10 @@ h5 {
 }
 
 .main-icon-content {
+    width: 240px;
+    height: 260px;
+    border:1px solid black;
+    box-sizing: border-box;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -216,15 +217,8 @@ h5 {
     align-items: center;
 }
 
-.main-icon-box {
-    width: 240px;
-    height: 260px;
-    border:1px solid black;
-    box-sizing: border-box;
-}
-
 /* hover 했을 때 y축 -16px만큼 움직임 */
-.main-icon-box:hover {
+.main-icon-content:hover {
     transform: translateY(-16px);
 }
 

@@ -48,146 +48,170 @@
     </section> -->
     <section id="main-content" class="section-main">
         <div class="main-content-intro">
-            <figure class="intro-img"></figure>
+            <!-- figure 없앰 -->
             <div class="search-content">
-                <figure class="돋보기">
+                <figure class="search-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-iconb" aria-hidden="true">
                         <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"></circle>
                         <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"></path>
                     </svg>
                 </figure>
-                <h5>고객 지원 센터</h5>
-                <input type="text" class="search" placeholder="검색">
+                <div class="search-container">
+                    <h5>고객 지원 센터</h5>
+                    <input type="text" class="search" placeholder="검색">
+                </div>
             </div>
         </div>
-    </section>>
+    </section>
+    <!-- css에 전체 a태그 만들고 unit link 넣어주기 -->
     <section class="help">
         <h2>도움이 필요하신가요? 저희가 도와드리겠습니다.</h2>
         <p>계정 설정부터 승인까지 Discord와 관련된 모든 것을 문의하세요.</p>
         <p>Discord를 시작한 지 얼마 안 되어 팁을 찾고 계신가요? 그렇다면, 저희의 <a href="#" class="help-guide">초보자를 위한 가이드를 확인해보세요!</a></p>
     </section>
     <section class="main-container">
+        <!-- ul 수정하기 li 자식으로 a태그 넣고 div빼기 -->
         <ul class="main-icons">
-            <div class="main-icon-box">
+            <li class="main-icon-content">
                 <a href="#">
-                    <li class="main-icon-content">
-                        <figure class="discord-img">
-                            <img src="img/discord-1.svg" alt="공지 사항">
-                        </figure>
-                        <h3>공지 사항</h3>
-                        <hr>
-                        <p>들어보세요. 무언가 심상치 않은 일이 벌어지고 있습니다.</p>
-                    </li>
+                    <figure class="discord-img">
+                        <img src="img/discord-1.svg" alt="공지 사항">
+                    </figure>
+                    <h3 class="discord-name">
+                        공지 사항
+                    </h3>
+                    <hr>
+                    <p class="discord-text">
+                        들어보세요. 무언가 심상치 않은 일이 벌어지고 있습니다.
+                    </p>
                 </a>
-            </div>
-            <div class="main-icon-box">
+            </li>
+            <li class="main-icon-content">
                 <a href="#">
-                    <li class="main-icon-content">
-                        <figure class="discord-img">
-                            <img src="img/discord-2.svg" alt="Discord 인터페이스">
-                        </figure>
-                        <h3>Discord 인터페이스</h3>
-                        <hr>
-                        <p>이 버튼은 무엇인가요?!</p>
-                    </li>
+                    <figure class="discord-img">
+                        <img src="img/discord-2.svg" alt="인터페이스">
+                    </figure>
+                    <h3 class="discord-name">
+                        Discord 인터페이스
+                    </h3>
+                    <hr>
+                    <p class="discord-text">
+                        이 버튼은 무엇인가요?!
+                    </p>
                 </a>
-            </div>
-            <div class="main-icon-box">
+            </li>
+            <li class="main-icon-content">
                 <a href="#">
-                    <li class="main-icon-content">
-                        <figure class="discord-img">
-                            <img src="img/discord-3.svg" alt="계정 설정">
-                        </figure>
-                        <h3>계정 설정</h3>
-                        <hr>
-                        <p>당신도 당신의 계정도 특별한 눈송이입니다.</p>
-                    </li>
+                    <figure class="discord-img">
+                        <img src="img/discord-3.svg" alt="계정설정">
+                    </figure>
+                    <h3 class="discord-name">
+                        계정 설정
+                    </h3>
+                    <hr>
+                    <p class="discord-text">
+                        당신도 당신의 계정도 특별한 눈송이입니다.
+                    </p>
                 </a>
-            </div>
-            <div class="main-icon-box">
+            </li>
+            <li class="main-icon-content">
                 <a href="#">
-                    <li class="main-icon-content">
-                        <figure class="discord-img">
-                            <img src="img/discord-4.svg" alt="시작하기">
-                        </figure>
-                        <h3>시작하기</h3>
-                        <hr>
-                        <p>첫 단추를 제대로 끼워야 합니다!</p>
-                    </li>
+                    <figure class="discord-img">
+                        <img src="img/discord-4.svg" alt="시작하기">
+                    </figure>
+                    <h3 class="discord-name">
+                        시작하기
+                    </h3>
+                    <hr>
+                    <p class="discord-text">
+                        첫 단추를 제대로 끼워야 합니다!
+                    </p>
                 </a>
-            </div>
-            <div class="main-icon-box">
+            </li>
+            <li class="main-icon-content">
                 <a href="#">
-                    <li class="main-icon-content">
-                        <figure class="discord-img">
-                            <img src="img/discord-5.svg" alt="서버 설정">
-                        </figure>
-                        <h3>서버 설정</h3>
-                        <hr>
-                        <p>실내 장식 만큼 재미있는 것.</p>
-                    </li>
+                    <figure class="discord-img">
+                        <img src="img/discord-5.svg" alt="서버설정">
+                    </figure>
+                    <h3 class="discord-name">
+                        서버 설정
+                    </h3>
+                    <hr>
+                    <p class="discord-text">
+                        실내 장식만큼 재미있는 것.
+                    </p>
                 </a>
-            </div>
-            <div class="main-icon-box">
+            </li>
+            <li class="main-icon-content">
                 <a href="#">
-                    <li class="main-icon-content">
-                        <figure class="discord-img">
-                            <img src="img/discord-6.svg" alt="커뮤니티 프로그램">
-                        </figure>
-                        <h3>커뮤니티 프로그램</h3>
-                        <hr>
-                        <p>HypeSquad를 위한 광고, 파트너를 위한 파티</p>
-                    </li>
+                    <figure class="discord-img">
+                        <img src="img/discord-6.svg" alt="커뮤니티 프로그램">
+                    </figure>
+                    <h3 class="discord-name">
+                        커뮤니티 프로그램
+                    </h3>
+                    <hr>
+                    <p class="discord-text">
+                        HypeSquaders를 위한 광고, 파트너를 위한 파티
+                    </p>
                 </a>
-            </div>
-            <div class="main-icon-box">
+            </li>
+            <li class="main-icon-content">
                 <a href="#">
-                    <li class="main-icon-content">
-                        <figure class="discord-img">
-                            <img src="img/discord-7.svg" alt="Nitro">
-                        </figure>
-                        <h3>Nitro</h3>
-                        <hr>
-                        <p>쓰러질 때까지 쇼핑하시면 안 돼요! 저희가 도와드릴게요.</p>
-                    </li>
+                    <figure class="discord-img">
+                        <img src="img/discord-7.svg" alt="Nitro">
+                    </figure>
+                    <h3 class="discord-name">
+                        Nitro
+                    </h3>
+                    <hr>
+                    <p class="discord-text">
+                        쓰러질 때까지 쇼핑하시면 안 돼요! 저희가 도와드릴게요.
+                    </p>
                 </a>
-            </div>
-            <div class="main-icon-box">
+            </li>
+            <li class="main-icon-content">
                 <a href="#">
-                    <li class="main-icon-content">
-                        <figure class="discord-img">
-                            <img src="img/discord-8.svg" alt="청구서">
-                        </figure>
-                        <h3>청구서</h3>
-                        <hr>
-                        <p>은행 계좌 잔액을 보는 기분.</p>
-                    </li>
+                    <figure class="discord-img">
+                        <img src="img/discord-8.svg" alt="청구서">
+                    </figure>
+                    <h3 class="discord-name">
+                        청구서
+                    </h3>
+                    <hr>
+                    <p class="discord-text">
+                        은행 계좌 잔액을 보는 기분.
+                    </p>
                 </a>
-            </div>
-            <div class="main-icon-box">
+            </li>
+            <li class="main-icon-content">
                 <a href="#">
-                    <li class="main-icon-content">
-                        <figure class="discord-img">
-                            <img src="img/discord-9.svg" alt="신뢰 & 보안">
-                        </figure>
-                        <h3>신뢰 & 보안</h3>
-                        <hr>
-                        <p>안전하고 건전하게</p>
-                    </li>
+                    <figure class="discord-img">
+                        <img src="img/discord-9.svg" alt="신뢰&보안">
+                    </figure>
+                    <h3 class="discord-name">
+                        신뢰 & 보안
+                    </h3>
+                    <hr>
+                    <p class="discord-text">
+                        안전하고 건전하게
+                    </p>
                 </a>
-            </div>
-            <div class="main-icon-box">
+            </li>
+            <li class="main-icon-content">
                 <a href="#">
-                    <li class="main-icon-content">
-                        <figure class="discord-img">
-                            <img src="img/discord-10.svg" alt="자주 묻는 질문">
-                        </figure>
-                        <h3>자주 묻는 질문</h3>
-                        <hr>
-                        <p>스스로 해결해 보아요.</p>
-                    </li>
+                    <figure class="discord-img">
+                        <img src="img/discord-10.svg" alt="자주 묻는 질문">
+                    </figure>
+                    <h3 class="discord-name">
+                        자주 묻는 질문
+                    </h3>
+                    <hr>
+                    <p class="discord-text">
+                        스스로 해결해 보아요.
+                    </p>
                 </a>
-            </div>
+            </li>
         </ul>
     </section>
     <section class="other-help">
