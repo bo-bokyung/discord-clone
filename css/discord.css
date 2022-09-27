@@ -205,12 +205,13 @@ h5 {
 }
 
 .discord-img {
-    
+
 }
 
 .main-icons {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
     align-items: center;
 }
@@ -218,7 +219,7 @@ h5 {
 .main-icon-box {
     width: 240px;
     height: 260px;
-    border:1px solid red;
+    border:1px solid black;
     box-sizing: border-box;
 }
 
