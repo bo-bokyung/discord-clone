@@ -61,7 +61,7 @@ h1 {
 .pc-view-header {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 35px;
 }
 
 .mobile-view-header {
@@ -122,11 +122,14 @@ h1 {
     background-position: center;
 }
 
-.search-icon {
-    position: relative;
-    max-width: 600px;
-    min-width: 400px;
-    margin: 0 auto;
+.search-icon { 
+    position: absolute;
+    top: 85%;
+    transform: translateY(-50%);
+    left: 15px;
+    width: 18px;
+    height: 18px;
+    color: #777;
 }
 
 h5 {
@@ -134,9 +137,9 @@ h5 {
     color: white;
     font-weight: 600;
     text-align: center;
-    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-bottom: 30px;
 }
-
 
 .search {
     /* display: flex; */
@@ -146,22 +149,27 @@ h5 {
     box-sizing: border-box;
     height: 40px;
     padding-left: 40px;
-    width: 50%;
+    padding-right: 40px;
+    width: 100%;
     border: 1px solid #888;
     outline: none;
 }
 
-.search-container {
-    align-items: center;
+.search-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 610px;
+    margin: 0 auto;
 }
 
 .help {
     text-align: center;
-    padding-top: 48px;
+    padding: ;
 }
 
 .help > h2 {
-    margin-bottom: 20px;
+    margin-top: 105px;
     font-size: 24px;
     font-weight: 400;
     color: var(--font-gray1)
@@ -171,6 +179,8 @@ h5 {
     font-size: 16px;
     color: var(--font-gray1);
     line-height: 1.5;
+    margin-top: 16px;
+    margin-bottom: 85px;
 }
 
 .help-guide {
@@ -181,10 +191,11 @@ h5 {
     text-decoration: underline;
 }
 
-.mian-container {
-    
+.main-icon-box {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
-
 .main-icon-content {
     width: 240px;
     height: 260px;
@@ -201,12 +212,19 @@ h5 {
     color: var(--font-bule);
 }
 
-.main-icon-content > p {
+.discord-name {
+    font-size: 20px;
+    color: var(--font-bule);
+}
+
+.discord-text {
     font-size: 14px;
+    color: var(--font-gray2);
 }
 
 .discord-img {
-
+    margin: 20px;
+    
 }
 
 .main-icons {
@@ -214,7 +232,7 @@ h5 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
-    align-items: center;
+    /* align-items: center; */
 }
 
 /* hover 했을 때 y축 -16px만큼 움직임 */
@@ -224,7 +242,9 @@ h5 {
 
 hr {
     width: 50px;
-    color: #999;
+    border-color: white;
+    margin-top: 20px;
+    margin-bottom: 8px;
 }
 
 .discord-img {
@@ -237,8 +257,17 @@ hr {
     text-align: center;
 }
 
+h2 {
+    margin-bottom: 32px;
+    margin-top: 70px;
+}
+
 .sub-container {
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
 }
 
 .sub-icons {
@@ -248,15 +277,24 @@ hr {
     align-items: center;
 }
 
-.detail-content {
+.game-developer {
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.twitter {
+    background-color: #f2f2f2;
+    border: none;
+}
+.footer-detail-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 80px;
-    background-color: #333;
+    background-color: #23272A;
 }
 
-.detail-button {
+.detail {
     width: 250px;
     height: 40px;
     margin: 50px 0;
@@ -278,13 +316,17 @@ hr {
     height: 145px;
     background-size: 814px 145px;
     background-image: url(../img/footer-phone.png);
-    background-color: #333;
+    background-color: #23272A;
 }
 
 .apps-icon > a > figure {
     display: flex;
     width: 50px;
     height: 50px;
+}
+
+.fotter-container {
+    display: flex;
 }
 
 /* 반응형 웹 코드 max width가 1024 일 때 */
