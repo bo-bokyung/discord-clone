@@ -224,7 +224,6 @@ h5 {
 
 .discord-img {
     margin: 20px;
-    
 }
 
 .main-icons {
@@ -286,12 +285,31 @@ h2 {
     background-color: #f2f2f2;
     border: none;
 }
+
+footer {
+    background-color: #23272A;
+}
+
+.fotter-phone {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 145px;
+    background-size: 814px 145px;
+    background-image: url(../img/footer-phone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fotter-phone::after {
+
+}
+
 .footer-detail-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 80px;
-    background-color: #23272A;
 }
 
 .detail {
@@ -311,12 +329,9 @@ h2 {
 }
 
 .apps-icon {
-    position: relative;
-    width: 814px;
-    height: 145px;
-    background-size: 814px 145px;
-    background-image: url(../img/footer-phone.png);
-    background-color: #23272A;
+    padding: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .apps-icon > a > figure {
@@ -325,8 +340,20 @@ h2 {
     height: 50px;
 }
 
-.fotter-container {
+.fotter-bottom {
     display: flex;
+    justify-content: space-between;
+}
+
+.bottom-logo {
+    width: 120px;
+    height: 120px;
+    margin-left: 40px;
+}
+
+.bottom-guide {
+
+    background-color: #23272A;
 }
 
 /* 반응형 웹 코드 max width가 1024 일 때 */
